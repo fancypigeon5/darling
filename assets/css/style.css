@@ -3,9 +3,53 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-  }
+}
+
+header {
+    position: relative;
+    z-index: 99;
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 #logo {
-    margin: .5em;
+    
     width: 10em;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100vw;
+    padding: 1em 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+nav a {
+    margin: .6em;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#nav-toggle:checked ~ nav {
+    display: flex;
+}
+
+#nav-toggle {
+    display: none;
 }

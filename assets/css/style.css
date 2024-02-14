@@ -98,7 +98,7 @@ main {
 #overlay {
     height: 100%;
     width: 100%;
-    background-color: #232323aa;
+    background-color: #232323cd;
 }
 
 #cover-container {
@@ -119,6 +119,10 @@ main {
     width: 100%;
 }
 
+#cover-text p {
+    display: none;
+}
+
 .cover-btn {
     width: fit-content;
 }
@@ -126,6 +130,17 @@ main {
 /* Media querries */
 
 @media screen and (min-width: 768px) {
+    
+    /* general */
+
+    .btn {
+        font-size: 1.5em;
+        padding: .5em 1em;
+        border: solid 5px #0081c9ff;
+    }
+
+    /* header */
+
     nav {
         position: relative;
         width: fit-content;
@@ -146,5 +161,23 @@ main {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    /* main */
+
+    #cover-container {
+        top: 30%;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+
+    #cover-text {
+        width: 40%;
+        order: 5;
+    }
+    
+    #cover-text p {
+        display: block;
+        padding: 1em;
     }
 }

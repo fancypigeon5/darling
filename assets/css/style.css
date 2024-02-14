@@ -1,5 +1,13 @@
 /* global */
 
+:root {
+    --primary-color: #0081c9;
+    --primary-color-transparent: #0081c9ee;
+    --secondary-color: #fff6d5;
+    --secondary-color-transparent: #fff6d5ee;
+    --overlay-color: #232323dd;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +20,16 @@
     font-size: 1em;
     font-weight: 700;
     padding: .5em 1em;
-    border: solid 3px #0081c9ff;
+    border: solid 3px var(--primary-color);
     border-radius: .5em;
-    background-color: #0081c9ee;
-    color: azure;
+    background-color: var(--primary-color-transparent);
+    color: var(--secondary-color);
     text-transform: uppercase;
 }
 
 .btn:hover {
-    background-color: #f0ffff90;
-    color: #0081c9;
+    background-color: var(--secondary-color-transparent);
+    color: var(--primary-color);
 }
 
 /* header */
@@ -37,7 +45,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 5px 5px #3a3a3a55;
+    box-shadow: 0 5px 5px var(--overlay-color);
 }
 
 #logo {
@@ -55,7 +63,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: white;
-    box-shadow: 0 5px 5px #3a3a3a55;
+    box-shadow: 0 5px 5px var(--overlay-color);
 }
 
 nav a {
@@ -98,7 +106,7 @@ main {
 #overlay {
     height: 100%;
     width: 100%;
-    background-color: #232323cd;
+    background-color: var(--overlay-color);
 }
 
 #cover-container {
@@ -136,7 +144,7 @@ main {
     .btn {
         font-size: 1.5em;
         padding: .5em 1em;
-        border: solid 5px #0081c9ff;
+        border: solid 5px var(--primary-color);
     }
 
     /* header */

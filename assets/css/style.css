@@ -103,7 +103,7 @@ main {
 
 #cover-container {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 0;
     width: 100%;
     display: flex;
@@ -120,7 +120,7 @@ main {
 }
 
 #cover-text p {
-    display: none;
+    padding: .5em;
 }
 
 .cover-btn {

@@ -3,9 +3,10 @@
 :root {
     --primary-color: #0081c9;
     --primary-color-transparent: #0081c9ee;
-    --secondary-color: #fff6d5;
-    --secondary-color-transparent: #fff6d5ee;
+    --secondary-color: #fffae6;
+    --secondary-color-transparent: #fffae6ee;
     --overlay-color: #232323dd;
+    --text-color-dark: #232323;
 }
 
 * {
@@ -13,6 +14,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    color: var(--text-color-dark);
 }
 
 .btn {
@@ -32,6 +34,24 @@
     color: var(--primary-color);
 }
 
+
+.tear-up {
+    background-image: url('../images/tear-up.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom center;
+    width: 100%;
+    height: 5vh;
+}
+
+.tear-down {
+    background-image: url('../images/tear-down.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom center;
+    width: 100%;
+    height: 5vh;
+}
 /* header */
 
 header {
@@ -41,11 +61,18 @@ header {
     height: 5em;
     z-index: 99;
     padding: 1em;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 5px 5px var(--overlay-color);
+}
+
+header .tear-down {
+    position: absolute;
+    bottom: -4vh;
+    left: 0;
 }
 
 #logo {
@@ -62,7 +89,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: var(--secondary-color);
     box-shadow: 0 5px 5px var(--overlay-color);
 }
 
@@ -93,6 +120,8 @@ main {
     margin-top: 5em;
 }
 
+/* hero */
+
 #hero {
     position: relative;
     width: 100%;
@@ -101,6 +130,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 #overlay {
@@ -111,7 +141,7 @@ main {
 
 #cover-container {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 0;
     width: 100%;
     display: flex;
@@ -121,7 +151,7 @@ main {
     }
 
 #cover-text {
-    color: azure;
+    color: var(--secondary-color);
     text-align: center;
     padding: 1em;
     width: 100%;
@@ -131,8 +161,25 @@ main {
     padding: .5em;
 }
 
+#cover-text > * {
+    color: var(--secondary-color);
+}
+
 .cover-btn {
     width: fit-content;
+}
+
+#hero .tear-up {
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+}
+
+/* about */
+
+#about {
+    height: 200vh;
+    background-color: var(--secondary-color);
 }
 
 /* Media querries */

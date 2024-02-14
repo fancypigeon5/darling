@@ -15,6 +15,7 @@ We also want to make sure it is easy to get in contact Both through a contact fo
 
 The website should also contain a portfolio of the consultancy's previous projects to help give the visitors an understanding of the work they do.
 
+## structure
 
 ## Skeleton
 
@@ -25,3 +26,6 @@ The website is a one-page website with the following sections:
 - Partners
 - Previous projects
 - Contact
+
+## surface
+

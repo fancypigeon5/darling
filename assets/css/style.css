@@ -9,6 +9,10 @@
     --text-color-dark: #232323;
 }
 
+html {
+    scroll-padding-top: 5em;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -251,6 +251,10 @@ main {
 
 .step {
     width: 75%;
+}
+
+.step-card {
+    width: 100%;
     padding: 1em;
     margin: 1em 0;
     box-shadow: 2px 2px 6px var(--text-color-dark);
@@ -282,7 +286,7 @@ main {
     width: 30%;
 }
 
-.step * {
+.step-card * {
     margin: .5em 0;
 }
 
@@ -385,10 +389,14 @@ main {
     .step {
         width: 20%;
         aspect-ratio: 1 / 1;
+    }
+    
+    .step-card {
+        height: 100%;
         flex-wrap: nowrap;
         position: relative;
         transform-style: preserve-3d;
-        transition: all .5s ease;
+        transition: all 1s ease;
     }
 
     .front {
@@ -407,7 +415,7 @@ main {
         transform: rotateY(180deg);
     }
 
-    .step:hover {
+    .step:hover .step-card {
         transform: rotateY(180deg);
     }
 }

@@ -189,6 +189,19 @@ main {
     align-items: center;
 }
 
+#about-title {
+    margin: 1em 0;
+    font-size: 3em;
+}
+
+#about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-image {
     margin: .5em;
     width: 60vw;
@@ -198,6 +211,7 @@ main {
 
 .about-group h1 {
     margin: .5em;
+    font-size: 2em;
 }
 
 .about-group p {
@@ -207,7 +221,7 @@ main {
 }
 
 .about-group {
-    margin: 1em 0;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +229,20 @@ main {
 }
 
 .about-how {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-how h1 {
+    font-size: 2em;
+}
+
+#step-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,6 +261,22 @@ main {
     align-items: center;
 }
 
+.front {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .step-img {
     margin: .5em 0;
     width: 30%;
@@ -242,7 +286,7 @@ main {
     margin: .5em 0;
 }
 
-.step p {
+.back p {
     padding: 0 .3em;
     text-align: center;
 }
@@ -301,5 +345,69 @@ main {
     #cover-text p {
         display: block;
         padding: 1em;
+    }
+
+    /* about section */
+
+    #about-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .about-group {
+        width: 40%;
+    }
+    
+    .about-image {
+        width: 75%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+
+    }
+    
+    .about-group p {
+        width: 60%;
+    }
+    
+    #step-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .step {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* about section */
+    .step {
+        width: 20%;
+        aspect-ratio: 1 / 1;
+        flex-wrap: nowrap;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all .5s ease;
+    }
+
+    .front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+    }
+
+    .step:hover {
+        transform: rotateY(180deg);
     }
 }

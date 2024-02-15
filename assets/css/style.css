@@ -57,6 +57,13 @@ html {
     width: 100%;
     height: 5vh;
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
 /* header */
 
 header {
@@ -136,16 +143,11 @@ main {
     width: 100%;
     height: 80vh;
     background-image: url('../images/hero-image.webp');
+    background-color: var(--text-color-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-}
-
-#overlay {
-    height: 100%;
-    width: 100%;
-    background-color: var(--overlay-color);
 }
 
 #cover-container {
@@ -187,6 +189,7 @@ main {
 /* about */
 
 #about {
+    position: relative;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -298,6 +301,25 @@ main {
 .back p {
     padding: 0 .3em;
     text-align: center;
+}
+
+#about .tear-down {
+    position: absolute;
+    bottom: -4vh;
+    left: 0;
+}
+
+/* partners */
+
+#partners {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../images/code-bg.webp');
+    background-color: var(--text-color-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 /* Media querries */

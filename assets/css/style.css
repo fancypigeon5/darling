@@ -24,7 +24,7 @@
     padding: .5em 1em;
     border: solid 3px var(--primary-color);
     border-radius: .5em;
-    background-color: var(--primary-color-transparent);
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     text-transform: uppercase;
 }
@@ -182,8 +182,18 @@ main {
 /* about */
 
 #about {
-    height: 200vh;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#workspace {
+    width: 50vw;
+    height: auto;
+    border-radius: 1em;
+
 }
 
 /* Media querries */
@@ -195,7 +205,6 @@ main {
     .btn {
         font-size: 1.5em;
         padding: .5em 1em;
-        border: solid 5px var(--primary-color);
     }
 
     /* header */

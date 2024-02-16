@@ -372,6 +372,30 @@ main {
     display: none;
 }
 
+#partners .tear-up {
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+}
+
+/* projects */
+
+#projects {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#projects-title {
+    text-align: center;
+    font-size: 3em;
+    margin: 2em 0;
+}
+
 /* Media querries */
 
 @media screen and (min-width: 768px) {

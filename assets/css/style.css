@@ -125,6 +125,16 @@ nav a {
     font-size: 1.2em;
     font-weight: 900;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a > hr {
+    width: 0;
+    height: 2px;
+    background-color: var(--overlay-color);
+    transition: width .5s ease;
+    transform-origin: 50%;
 }
 
 .nav-toggle-label {
@@ -574,6 +584,13 @@ main {
 }
 
 @media screen and (min-width: 992px) {
+    
+    /* header */
+
+    nav > a:hover > hr {
+        width: 100%;
+    }
+    
     /* about section */
     .step {
         width: 20%;

@@ -538,7 +538,7 @@ main {
 }
 
 .form-toggle-label {
-    width: 8em;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -560,7 +560,7 @@ main {
     text-align: center;
     margin: 1em 0;
     height: 2em;
-    width: 16em;
+    width: 80%;
     background-color: var(--secondary-color-transparent);
     border-radius: 2em;
     overflow: hidden;

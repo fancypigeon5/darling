@@ -22,6 +22,24 @@ html {
     color: var(--text-color-dark);
 }
 
+/* scrollbar styling */
+::-webkit-scrollbar {
+    width: .5em;
+  }
+  
+::-webkit-scrollbar-track {
+    background: var(--secondary-color); 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color-transparent);
+    border-radius: .5em; 
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); 
+  }
+
 .btn {
     width: fit-content; 
     text-decoration: none;
@@ -634,6 +652,7 @@ main {
 
     .project {
         position: relative;
+        overflow: hidden;
         margin: 3em 5%;
         width: 30%;
         aspect-ratio: 1 / 1;
@@ -646,19 +665,45 @@ main {
 
     .project-text {
         position: absolute;
+        justify-content: flex-start;
         padding: 0;
         bottom: 0;
         left: 0;
-        height: 0;
-        border-radius: 2em;
+        height: 4em;
+        border-radius: 0 0 2em 2em;
         overflow: hidden;
         background-color: var(--overlay-color);
-        transition: height .5s ease;
+        transition: all .5s ease;
+    }
+
+    .project-text p, .project-text ul {
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    .project-text h2 {
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 2em;
+    }
+
+    .project-text * {
+        text-align: left;
     }
 
     .project:hover .project-text {
         height: 100%;
-        padding: 2em;
+        padding: 1em;
+        border-radius: 2em;
+        overflow: auto;
+    }
+
+    .project:hover .project-text h2 {
+        margin: .5rem 0;
+    }
+
+    .project:hover .project-text p, .project:hover .project-text ul {
+        opacity: 1;
     }
 }
 

@@ -522,8 +522,8 @@ main {
 }
 
 #contact-container {
-    width: 50%;
-    height: 50%;
+    padding: 1em;
+    width: 90%;
     border-radius: 2em;
     background-color: var(--overlay-color);
     color: var(--secondary-color);
@@ -558,9 +558,9 @@ main {
 
 #form-info-toggle {
     text-align: center;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
     height: 2em;
-    width: 80%;
+    width: 90%;
     background-color: var(--secondary-color-transparent);
     border-radius: 2em;
     overflow: hidden;
@@ -569,28 +569,54 @@ main {
     align-items: center;
 }
 
-#form-info-toggle:has(#form-check:checked) ~ #form {
+#form-info-toggle:has(#form-check:checked) ~ #form-container {
     display: block;
 }
 
-#form-info-toggle:has(#info-check:checked) ~ #contact-info {
-    display: block;
+#form-info-toggle:has(#info-check:checked) ~ #contact-info-container {
+    display: flex;
 }
 
-#form {
+#form-container {
     display: none;
     width: 80%;
-    height: 70%;
+    border-radius: 2em;
+    
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    background-color: transparent;
+    border: solid 1px var(--secondary-color-transparent);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    padding: .2em;
+    margin: .2em 0 .5em 0;
+}
+
+#contact-info-container {
+    display: none;
+    border-radius: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#maps {
+    width: 90%;
     border-radius: 2em;
 }
 
 #contact-info {
-    display: none;
-    width: 80%;
-    height: 70%;
-    border-radius: 2em;
+    margin: 1em 0;
+    width: fit-content;
 }
-
 
 
 

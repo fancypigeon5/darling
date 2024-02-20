@@ -33,7 +33,7 @@
                 Projects
                 <hr>
             </a>
-            <a href="">
+            <a href="#contact">
                 Contact
                 <hr>
             </a>
@@ -49,7 +49,7 @@
                     <h1>Data-Analysis & Software Cunsultency</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis natus at, veniam ipsum, nulla vitae totam explicabo, eos rerum corporis eaque iste. Veritatis ex unde tempora possimus nemo alias.</p>
                 </div>
-                <a href="" class="btn cover-btn">Get in touch!</a>
+                <a href="#contact" class="btn cover-btn">Get in touch!</a>
             </div>
             <div class="tear-up"></div>
         </section>
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <a href="" class="btn about-btn">Contact Us Now</a>
+            <a href="#contact" class="btn about-btn">Contact Us Now</a>
 
             <div class="about-how">
                 <h1>How we do it</h1>
@@ -251,8 +251,56 @@
                         Contact Info
                     </label>
                 </div>
-                <div id="form">Form</div>
-                <div id="contact-info">Info</div>
+                <div id="form-container">
+                    <form action="https://formdump.codeinstitute.net" method="post" id="contact-form">
+                        <label for="first_name">First Name</label>
+                        <input
+                            type="text"
+                            name="first_name"
+                            id="first_name"
+                            class="text-input"
+                            required
+                        />
+                        <label for="last_name">Last Name</label>
+                        <input
+                            type="text"
+                            name="last_name"
+                            id="last_name"
+                            class="text-input"
+                            required
+                        />
+                        <label for="company">Company Name</label>
+                        <input
+                            type="text"
+                            name="company"
+                            id="company"
+                            class="text-input"
+                        />
+                        <label for="email_address">Email Address</label>
+                        <input
+                            type="email"
+                            name="email_address"
+                            id="email_address"
+                            class="text-input"
+                            required
+                        />
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="25" rows="7">
+                            Write your message here...
+                        </textarea>
+                        <button type="submit" class="submit-button btn">Send Message</button>
+                    </form>
+                </div>
+                <div id="contact-info-container">
+                    <div id="contact-info">
+                        <p>e-mail Address: info@darling.be</p>
+                        <p>Address:</p> 
+                        <p>Platte-lostraat 48</p>
+                        <p>3010 Kessel-lo Belgium</p>
+                        <p>Phone number: +32 478 52 72 53</p>
+                    </div>
+                    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1258.8694320574466!2d4.723167!3d50.873034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c166d65e12299b%3A0xfeec971a95bd3b4a!2sStoredesk!5e0!3m2!1sen!2sus!4v1708423922364!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <div class="tear-up"></div>
         </section>

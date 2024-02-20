@@ -253,41 +253,49 @@
                 </div>
                 <div id="form-container">
                     <form action="https://formdump.codeinstitute.net" method="post" id="contact-form">
-                        <label for="first_name">First Name</label>
-                        <input
-                            type="text"
-                            name="first_name"
-                            id="first_name"
-                            class="text-input"
-                            required
-                        />
-                        <label for="last_name">Last Name</label>
-                        <input
-                            type="text"
-                            name="last_name"
-                            id="last_name"
-                            class="text-input"
-                            required
-                        />
-                        <label for="company">Company Name</label>
-                        <input
-                            type="text"
-                            name="company"
-                            id="company"
-                            class="text-input"
-                        />
-                        <label for="email_address">Email Address</label>
-                        <input
-                            type="email"
-                            name="email_address"
-                            id="email_address"
-                            class="text-input"
-                            required
-                        />
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message">
-                            Write your message here...
-                        </textarea>
+                        <div class="input-container">
+                            <label for="first_name">First Name</label>
+                            <input
+                                type="text"
+                                name="first_name"
+                                id="first_name"
+                                class="text-input"
+                                required
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="last_name">Last Name</label>
+                            <input
+                                type="text"
+                                name="last_name"
+                                id="last_name"
+                                class="text-input"
+                                required
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="company">Company Name</label>
+                            <input
+                                type="text"
+                                name="company"
+                                id="company"
+                                class="text-input"
+                            />
+                        </div>
+                        <div class="input-container">
+                            <label for="email_address">Email Address</label>
+                            <input
+                                type="email"
+                                name="email_address"
+                                id="email_address"
+                                class="text-input"
+                                required
+                            />
+                        </div>
+                        <div class="message-container">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+                        </div>
                         <button type="submit" class="submit-button btn">Send Message</button>
                     </form>
                 </div>

@@ -664,6 +664,10 @@ main {
     width: fit-content;
 }
 
+#contact-info * {
+    margin: .5em 0;
+}
+
 .submit-button {
     font-size: .7em;
     width: 100%;

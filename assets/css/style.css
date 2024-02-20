@@ -527,7 +527,10 @@ main {
     width: 90%;
     height: 80%;
     border-radius: 2em;
-    background-color: var(--overlay-color);
+    background-color: transparent;
+    border: solid 1px var(--secondary-color-extra-transparent);
+    backdrop-filter: blur(1em);
+    box-shadow: 2px 2px 6px var(--overlay-color);
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -572,7 +575,7 @@ main {
 }
 
 #form-info-toggle:has(#form-check:checked) ~ #form-container {
-    display: block;
+    display: flex;
 }
 
 #form-info-toggle:has(#info-check:checked) ~ #contact-info-container {
@@ -584,12 +587,15 @@ main {
     width: 80%;
     height: 100%;
     border-radius: 2em;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-form {
     width: 100%;
     height: 100%;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -614,20 +620,34 @@ main {
     border: solid 1px var(--secondary-color-transparent);
     border-radius: 2em;
     color: var(--secondary-color);
-    padding: .2em;
+    padding: 1em;
     margin: .2em 0 .5em 0;
 }
 
 #message {
     flex-grow: 1;
-    padding: 5%;
+    padding: 1em;
+}
+
+.text-input::placeholder, #message::placeholder {
+    color: var(--secondary-color-extra-transparent);
 }
 
 #contact-info-container {
     width: 100%;
     height: 100%;
+    flex-shrink: 1;
     display: none;
     border-radius: 2em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact-info-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -775,8 +795,8 @@ footer {
     }
 
     #contact-container {
-        width: 60%;
-        height: 60%;
+        width: 80%;
+        height: 50%;
     }
 
     #contact-form {
@@ -794,11 +814,7 @@ footer {
         width: 100%;
     }
 
-    #message {
-        padding: 1%;
-    }
-
-    #contact-info-container {
+    #contact-info-content {
         flex-direction: row;
         justify-content: space-around;
 
@@ -921,14 +937,15 @@ footer {
     .project:hover .project-text p, .project:hover .project-text ul {
         opacity: 1;
     }
+}
 
+@media screen and (min-width: 1200px) {
     /* contact */
 
     #contact-container {
         width: 40%;
         height: 60%;
     }
-
 }
 
 /* animations */

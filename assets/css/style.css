@@ -921,6 +921,14 @@ footer {
     .project:hover .project-text p, .project:hover .project-text ul {
         opacity: 1;
     }
+
+    /* contact */
+
+    #contact-container {
+        width: 40%;
+        height: 60%;
+    }
+
 }
 
 /* animations */

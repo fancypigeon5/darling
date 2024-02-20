@@ -29,7 +29,7 @@ html {
   }
   
 ::-webkit-scrollbar-track {
-    background: var(--secondary-color); 
+    background: transparent; 
   }
    
 ::-webkit-scrollbar-thumb {

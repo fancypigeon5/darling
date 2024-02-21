@@ -7,6 +7,7 @@
     --secondary-color-transparent: #fffae6ee;
     --secondary-color-extra-transparent: #fffae666;
     --overlay-color: #232323dd;
+    --overlay-extra-transparent: #23232333;
     --text-color-dark: #232323;
 }
 
@@ -203,12 +204,17 @@ main {
 #cover-text {
     color: var(--secondary-color);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
     width: 100%;
 }
 
 #cover-text p {
     padding: .5em;
+    text-align: start;
 }
 
 #cover-text > * {
@@ -248,7 +254,7 @@ main {
 
 .about-image {
     margin: .5em;
-    width: 60vw;
+    width: 65vw;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 1em;
@@ -261,8 +267,8 @@ main {
 
 .about-group p {
     margin: .5em;
-    width: 70vw;
-    text-align: center;
+    width: 65vw;
+    text-align: start;
 }
 
 .about-group {
@@ -316,6 +322,7 @@ main {
 
 .front {
     width: 100%;
+    border-radius: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -478,8 +485,29 @@ main {
     align-items: center;
 }
 
-.project-text * {
+.project-text > * {
     color: var(--secondary-color);
+}
+
+.project-explanation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-lists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text h2 {
+    width: 100%;
+    text-align: center;
 }
 
 .project-text p {
@@ -487,8 +515,9 @@ main {
     padding: .2em 0;
 }
 
-.project-text > ul {
-    width: 60%;
+.project-text ul, .project-text li {
+    width: 100%;
+    padding: 0 0 0 1em;
 }
 
 #projects .tear-down {
@@ -722,6 +751,8 @@ footer {
 
     /* main */
 
+    /* hero */
+
     #cover-container {
         top: 30%;
         flex-direction: row;
@@ -757,7 +788,8 @@ footer {
     }
     
     .about-group p {
-        width: 60%;
+        width: 75%;
+        font-size: 1.5em;
     }
     
     #step-container {
@@ -852,6 +884,36 @@ footer {
     nav > a:hover > hr {
         width: 100%;
     }
+
+    /* main */
+
+    /* hero */
+
+    #cover-container {
+        width: 50%;
+        top: 40%;
+        right: 0;
+        left: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        }
+
+    #cover-text {
+        width: 70%;
+        order: 1;
+    }
+
+    .cover-btn {
+        order: 2;
+    }
+    
+    #cover-text h1 {
+        font-size: 3em;
+    }
+
+    #cover-text p {
+        width: 80%;
+    }
     
     /* about section */
     .step {
@@ -895,6 +957,47 @@ footer {
 
     /* projects */
 
+    .project-text {
+        padding: 1em 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-text h2 {
+        margin: 2em 0;
+    }
+    
+    .project-explanation {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .project-lists {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-explanation *, .project-lists p {
+        width: 100%;
+    }
+
+    .project-lists p {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    /* projects */
+
     #projects-container {
         width: 100%;
         height: 35vw;
@@ -918,7 +1021,6 @@ footer {
 
     .project-text {
         position: absolute;
-        justify-content: flex-start;
         align-items: center;
         padding: 0;
         bottom: 0;
@@ -941,10 +1043,6 @@ footer {
         font-size: 2em;
     }
 
-    .project-text * {
-        text-align: left;
-    }
-
     .project:hover {
         width: 30%;
     }
@@ -953,7 +1051,6 @@ footer {
         height: 100%;
         padding: 1em;
         border-radius: 2em;
-        justify-content: center;
         overflow: auto;
     }
 
@@ -964,9 +1061,7 @@ footer {
     .project:hover .project-text p, .project:hover .project-text ul {
         opacity: 1;
     }
-}
-
-@media screen and (min-width: 1200px) {
+    
     /* contact */
 
     #contact-container {

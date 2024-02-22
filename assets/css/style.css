@@ -969,9 +969,8 @@ footer {
 
     .project-text {
         padding: 1em 1em;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -979,6 +978,14 @@ footer {
         margin: 2em 0;
     }
     
+    .project-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+
     .project-explanation {
         width: 45%;
         display: flex;
@@ -1113,10 +1120,11 @@ footer {
         padding: 1em;
         border-radius: 2em;
         overflow: auto;
+        justify-content: center;
     }
 
     .project:hover .project-text h2 {
-        margin: .5rem 0;
+        margin: 2rem 0;
     }
 
     .project:hover .project-text p, .project:hover .project-text ul {

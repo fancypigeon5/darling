@@ -1,6 +1,7 @@
 /* global */
 
 :root {
+    font-size: 16px;
     --primary-color: #0081c9;
     --primary-color-transparent: #0081c9ee;
     --secondary-color: #fffae6;

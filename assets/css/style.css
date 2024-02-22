@@ -313,7 +313,6 @@ main {
 
 .step-card {
     width: 100%;
-    padding: 1em;
     margin: 1em 0;
     box-shadow: 2px 2px 6px var(--text-color-dark);
     border-radius: 2em;
@@ -324,7 +323,9 @@ main {
 }
 
 .front {
+    position: relative;
     width: 100%;
+    aspect-ratio: 1/1;
     border-radius: 2em;
     overflow: hidden;
     background-color: var(--text-color-dark);
@@ -364,6 +365,7 @@ main {
 
 .back {
     width: 100%;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -477,7 +479,6 @@ main {
     margin: 2em 0;
     width: 80%;
     border-radius: 2em;
-    background-color: var(--overlay-color);
     box-shadow: 2px 2px 6px var(--overlay-color);
     display: flex;
     flex-direction: column;
@@ -495,6 +496,7 @@ main {
 }
 
 .project-image {
+    background-color: var(--overlay-color);
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 2em 2em 0 0;
@@ -512,10 +514,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.project-text > * {
-    color: var(--secondary-color);
 }
 
 .project-explanation {
@@ -967,6 +965,47 @@ footer {
         width: 80%;
     }
     
+    /* projects */
+
+    .project-text {
+        padding: 1em 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-text h2 {
+        margin: 2em 0;
+    }
+    
+    .project-explanation {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .project-lists {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .project-explanation *, .project-lists p {
+        width: 100%;
+    }
+
+    .project-lists p {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
     /* about section */
 
     .about-how {
@@ -1013,46 +1052,6 @@ footer {
         transform: rotateY(180deg);
     }
 
-    /* projects */
-
-    .project-text {
-        padding: 1em 1em;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .project-text h2 {
-        margin: 2em 0;
-    }
-    
-    .project-explanation {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .project-lists {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .project-explanation *, .project-lists p {
-        width: 100%;
-    }
-
-    .project-lists p {
-        text-align: start;
-    }
-}
-
-@media screen and (min-width: 1200px) {
     
     /* projects */
 
@@ -1088,6 +1087,10 @@ footer {
         overflow: hidden;
         background-color: var(--overlay-color);
         transition: all .5s ease;
+    }
+
+    .project-text * {
+        color: var(--secondary-color);
     }
 
     .project-text p, .project-text ul {

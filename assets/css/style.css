@@ -267,12 +267,15 @@ main {
 
 .about-group p {
     margin: .5em;
+    padding: 1em;
     width: 65vw;
     text-align: start;
 }
 
 .about-group {
     margin-bottom: 1em;
+    border-radius: 2em;
+    box-shadow: 2px 2px 6px var(--overlay-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,10 +326,40 @@ main {
 .front {
     width: 100%;
     border-radius: 2em;
+    overflow: hidden;
+    background-color: var(--text-color-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.consult {
+    background-image: url('../images/consulting.webp');
+}
+
+.design {
+    background-image: url('../images/designing.webp');
+}
+
+.develop {
+    background-image: url('../images/developing.webp');
+}
+
+.deliver {
+    background-image: url('../images/delivery.webp');
+}
+
+.front h2 {
+    z-index: 2;
+    color: var(--secondary-color);
+}
+
+.front .overlay {
+    opacity: .7;
 }
 
 .back {
@@ -340,10 +373,6 @@ main {
 .step-img {
     margin: .5em 0;
     width: 30%;
-}
-
-.step-card * {
-    margin: .5em 0;
 }
 
 .back p {
@@ -772,16 +801,38 @@ footer {
     /* about section */
 
     #about-container {
-        flex-direction: row;
-        justify-content: space-evenly;
+        align-items: flex-start;
     }
     
     .about-group {
-        width: 40%;
+        margin: 1em 4em;
+        width: 80%;
+        flex-direction: row;
+        border-radius: 2em;
+        box-shadow: 2px 2px 6px var(--overlay-color);
+    }
+
+    .what-we-do {
+        align-self: flex-end;
+    }
+
+    .what-we-do .about-image {
+        order: 2;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .about-text * {
+        text-align: center;
     }
     
     .about-image {
-        width: 75%;
+        width: 45%;
         aspect-ratio: 4 / 3;
         object-fit: cover;
 
@@ -891,7 +942,8 @@ footer {
 
     #cover-container {
         width: 50%;
-        top: 40%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 0;
         left: auto;
         flex-direction: column;
@@ -916,6 +968,15 @@ footer {
     }
     
     /* about section */
+
+    .about-how {
+        margin: 5em 2em;
+    }
+
+    .about-how h1 {
+        margin: 1em 0;
+    }
+
     .step {
         width: 20%;
         aspect-ratio: 1 / 1;
@@ -931,6 +992,7 @@ footer {
 
     .front {
         position: absolute;
+        background-color: var(--secondary-color);
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
@@ -940,15 +1002,11 @@ footer {
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: var(--overlay-color);
+        background-color: var(--secondary-color);
         border-radius: 2em;
         padding: 1em;
         backface-visibility: hidden;
         transform: rotateY(180deg);
-    }
-
-    .back * {
-        color: var(--secondary-color);
     }
 
     .step:hover .step-card {

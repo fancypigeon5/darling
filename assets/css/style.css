@@ -562,6 +562,7 @@ main {
 #contact {
     position: relative;
     height: fit-content;
+    min-height: 65vh;
     background-image: url('../images/contact-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;

@@ -1026,17 +1026,10 @@ footer {
     .project-info {
         padding: 0 1em;
         display: flex;
-        /* flex-direction: row; */
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        /* align-items: center; */
     }
-
-    /* .storedesk .project-info {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
 
     .project-explanation {
         width: 100%;
@@ -1054,16 +1047,6 @@ footer {
         align-items: flex-start;
     }
     
-    /* .storedesk .project-lists, .storedesk .project-explanation {
-        width: 100%;
-        padding: 0 .5em;
-    } */
-
-    /* .storedesk .project-lists {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-     */
     .project-explanation *, .project-lists p {
         width: 100%;
     }
@@ -1262,10 +1245,6 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         animation: logo-slider 30s linear infinite;
-    }
-
-    #logos-container:hover .logo-slide {
-        animation-play-state: paused;
     }
 
     .logo-slide2 {

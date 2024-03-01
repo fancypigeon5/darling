@@ -2,8 +2,9 @@
   "name": "darling",
   "version": "1.0.0",
   "description": "darling",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
+    "build" : "mkdir -p dist && cp index.html dist/ && cp -r assets dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

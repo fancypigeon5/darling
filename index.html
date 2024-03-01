@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Darling is a software and data-analysis consultancy company">
     <meta name="keywords" content="software, data-analysis, darling, consultancy, development">
-    <link rel="icon" href="assets/images/logo.png" type="image/x-icon"/>
+    <link rel="preload" href="assets/images/hero-image.webp" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/darlinglogo.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Darling</title>
 </head>
+
 <body>
     <header>
-        <a href="#hero"><img id="logo" src="assets/images/logo-long.png" alt="Darling logo"></a>
+        <a href="#hero"><img id="logo" src="assets/images/darlinglogo-long.svg" alt="Darling logo"></a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle" />
         <label for="nav-toggle" class="nav-toggle-label">
             <i class="fa-solid fa-bars"></i>
@@ -55,19 +60,19 @@
         </section>
 
         <section id="about">
-            <h1 id="about-title">About us</h1>
+            <h2 id="about-title">About us</h2>
             <div id="about-container">
                 <div class="about-group">
                     <img class="about-image" src="assets/images/minimalist-workspace.webp" alt="minimalist programmers workspace">
                     <div class="about-text">
-                        <h1>Who we are</h1>
+                        <h3>Who we are</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit delectus quaerat, porro deleniti veritatis architecto et deserunt quia quasi, omnis iusto. Laudantium voluptatibus ut asperiores voluptates earum nisi reprehenderit ab.</p>
                     </div>
                 </div>
                 <div class="about-group what-we-do">
                     <img class="about-image" src="assets/images/laptop-code.webp" alt="minimalist programmers workspace">
                     <div class="about-text">
-                        <h1>What we do</h1>
+                        <h3>What we do</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit delectus quaerat, porro deleniti veritatis architecto et deserunt quia quasi, omnis iusto. Laudantium voluptatibus ut asperiores voluptates earum nisi reprehenderit ab.</p>
                     </div>
                 </div>
@@ -76,13 +81,13 @@
             <a href="#contact" class="btn about-btn">Contact Us Now</a>
 
             <div class="about-how">
-                <h1>How we do it</h1>
+                <h3>How we do it</h3>
                 <div id="step-container">
                     <div class="step">
                         <div class="step-card">
                             <div class="front consult">
                                 <div class="overlay"></div>
-                                <h2>Consult</h2>
+                                <h4>Consult</h4>
                             </div>
                             <div class="back">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae est nihil saepe ex cum rerum necessitatibus obcaecati minus! Alias nesciunt ab dicta reiciendis natus nihil error omnis, sit accusantium!</p>
@@ -93,7 +98,7 @@
                         <div class="step-card">
                             <div class="front design">
                                 <div class="overlay"></div>
-                                <h2>Design</h2>
+                                <h4>Design</h4>
                             </div>
                             <div class="back">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae est nihil saepe ex cum rerum necessitatibus obcaecati minus! Alias nesciunt ab dicta reiciendis natus nihil error omnis, sit accusantium!</p>
@@ -104,7 +109,7 @@
                         <div class="step-card">
                             <div class="front develop">
                                 <div class="overlay"></div>
-                                <h2>Develop</h2>
+                                <h4>Develop</h4>
                             </div>
                             <div class="back">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae est nihil saepe ex cum rerum necessitatibus obcaecati minus! Alias nesciunt ab dicta reiciendis natus nihil error omnis, sit accusantium!</p>
@@ -115,7 +120,7 @@
                         <div class="step-card">
                             <div class="front deliver">
                                 <div class="overlay"></div>
-                                <h2>Deliver</h2>
+                                <h4>Deliver</h4>
                             </div>
                             <div class="back">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae est nihil saepe ex cum rerum necessitatibus obcaecati minus! Alias nesciunt ab dicta reiciendis natus nihil error omnis, sit accusantium!</p>
@@ -129,7 +134,7 @@
 
         <section id="partners">
             <div class="overlay"></div>
-            <h1 id="partners-title">Meet Our Partners</h1>
+            <h2 id="partners-title">Partners</h2>
             <div id="logos-container">
                 <div class="logo-slide">
                     <img class='logo' src="assets/images/TMF-logo.png" alt="logo TMF">
@@ -152,13 +157,13 @@
         </section>
 
         <section id="projects">
-            <h1 id="projects-title">Our Previous Projects</h1>
+            <h2 id="projects-title">Projects</h2>
             <div id="projects-container">
                 <div class="project">
-                    <a class="project-link" href="https://adlens-be.medium.com" target="_blank"></a>
+                    <a class="project-link" href="https://adlens-be.medium.com" target="_blank" aria-label="Read more about AdLens"></a>
                     <img class="project-image" src="assets/images/adlens-logo.png" alt="logo AdLens">
                     <div class="project-text">
-                        <h2>AdLens</h2>
+                        <h3>AdLens</h3>
                         <div class="project-info">
                             <div class="project-explanation">
                                 <p>
@@ -168,82 +173,90 @@
                                 </p>
                             </div>
                             <div class="project-lists">
-                                <p>
-                                    Tools:
-                                </p>    
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>GCS</li>
-                                    <li>Google BigQuery</li>
-                                    <li>MongoDB</li>
-                                </ul>
+                                <div class="list">
+                                    <h4>
+                                        Tools:
+                                    </h4>    
+                                    <ul>
+                                        <li>NodeJS</li>
+                                        <li>GCS</li>
+                                        <li>Google BigQuery</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <a class="project-link" href="https://texttotree.com/" target="_blank"></a>
+                    <a class="project-link" href="https://texttotree.com/" target="_blank" aria-label="Visit TextToTree website"></a>
                     <img class="project-image" src="assets/images/texttotree.png" alt="Text To Tree example">
                     <div class="project-text">
-                        <h2>TextToTree</h2>
+                        <h3>TextToTree</h3>
                         <div class="project-info">
                             <div class="project-explanation">
                                 <p>TextToTree is an online tool that creates unique tree images as a representation of the emotional content of text messages.
                                 Role: algorithm development, text analysis, implementation (2019 - )</p>
                             </div>
                             <div class="project-lists">
-                                <p>
-                                    Tools:
-                                </p>    
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>MongoDB</li>
-                                    <li>3D.js</li>
-                                    <li>Sentiment analysis API's (amazon, google, microsoft)</li>
-                                </ul>
+                                <div class="list">
+                                    <h4>
+                                        Tools:
+                                    </h4>    
+                                    <ul>
+                                        <li>NodeJS</li>
+                                        <li>MongoDB</li>
+                                        <li>3D.js</li>
+                                        <li>Sentiment analysis API's (amazon, google, microsoft)</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project">
-                    <img class="project-image storedesk" src="assets/images/storedesklogo.png" alt="Storedesk logo">
+                <div class="project storedesk">
+                    <img class="project-image storedesk" src="assets/images/storedesk-logo.svg" alt="Storedesk logo">
                     <div class="project-text">
-                        <h2>Storedesk</h2>
+                        <h3>Storedesk</h3>
                         <div class="project-info">
                             <div class="project-explanation">
                                 <p>Storedesk offers premium SMS services to companies. Storedesk has direct connections to the Belgian telecom providers and processes these messages with a custom build platform. Storedesk processed over 100M premium SMS messages.</p>
                             </div>
                             <div class="project-lists">
-                                <p>
-                                    Features:
-                                </p>  
-                                <ul>
-                                    <li>TV onscreen chat</li>
-                                    <li>Teletext chat</li> 
-                                    <li>TV onscreen games</li>
-                                    <li>TV onscreen voting</li>
-                                    <li>Weather forecast</li>
-                                    <li>Uptime alerts</li>
-                                    <li>micropayments / web paywall</li>
-                                </ul>
-                                <p>
-                                    Tools:
-                                </p>    
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>GCS</li>
-                                    <li>Google BigQuery</li>
-                                    <li>MongoDB</li>
-                                </ul>
+                                <div class="list">
+                                    <h4>
+                                        Features:
+                                    </h4>  
+                                    <ul>
+                                        <li>TV onscreen chat</li>
+                                        <li>Teletext chat</li> 
+                                        <li>TV onscreen games</li>
+                                        <li>TV onscreen voting</li>
+                                        <li>Weather forecast</li>
+                                        <li>Uptime alerts</li>
+                                        <li>micropayments / web paywall</li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <h4>
+                                        Tools:
+                                    </h4>    
+                                    <ul>
+                                        <li>NodeJS</li>
+                                        <li>GCS</li>
+                                        <li>Google BigQuery</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="project">
-                    <a class="project-link" href="https://ppw.kuleuven.be/onderwijskunde/documents/loso-introductie.pdf" target="_blank"></a>
+                    <a class="project-link" href="https://ppw.kuleuven.be/onderwijskunde/documents/loso-introductie.pdf" target="_blank" aria-label="Read more about LOSO"></a>
                     <img class="project-image" src="assets/images/loso.png" alt="LOSO example">
                     <div class="project-text">
-                        <h2>LOSO</h2>
+                        <h3>LOSO</h3>
                         <div class="project-info">
                             <p>
                                 LOSO was a longitudinal study of the KULeuven (department of educational studies) in Belgian secondary schools. Role (1994-1996): Data cleanup, database design
@@ -272,52 +285,60 @@
                 </div>
                 <div id="form-container">
                     <h2>Contact Us</h2>
-                    <form action="https://formdump.codeinstitute.net" method="post" autocomplete="on" id="contact-form">
-                        <div class="input-container">
-                            <!-- <label for="first_name">First Name</label> -->
-                            <input
-                                type="text"
-                                name="first_name"
-                                id="first_name"
-                                class="text-input"
-                                placeholder="First Name*"
-                                required
-                            />
-                        </div>
-                        <div class="input-container">
-                            <!-- <label for="last_name">Last Name</label> -->
-                            <input
-                                type="text"
-                                name="last_name"
-                                id="last_name"
-                                class="text-input"
-                                placeholder="Last Name*"
-                                required
-                            />
-                        </div>
-                        <div class="input-container">
-                            <!-- <label for="company">Company Name</label> -->
-                            <input
-                                type="text"
-                                name="company"
-                                id="company"
-                                class="text-input"
-                                placeholder="Company Name"
-                            />
-                        </div>
-                        <div class="input-container">
-                            <!-- <label for="email_address">Email Address</label> -->
-                            <input
-                                type="email"
-                                name="email_address"
-                                id="email_address"
-                                class="text-input"
-                                placeholder="Email Address*"
-                                required
-                            />
+                    <form action="https://formdump.codeinstitute.net" method="post" id="contact-form">
+                        <div class="upper-input-container">   
+                            <div class="input-container">
+                                <label for="first_name">First Name</label>
+                                <input
+                                    type="text"
+                                    name="first_name"
+                                    id="first_name"
+                                    class="text-input"
+                                    placeholder="First Name*"
+                                    autocomplete="name"
+                                    required
+                                />
+                            </div>
+                            <div class="input-container">
+                                <label for="last_name">Last Name</label>
+                                <input
+                                    type="text"
+                                    name="last_name"
+                                    id="last_name"
+                                    class="text-input"
+                                    placeholder="Last Name*"
+                                    autocomplete="family-name"
+                                    required
+                                />
+                            </div>
+                        </div> 
+                        <div class="upper-input-container">
+                            <div class="input-container">
+                                <label for="company">Company Name</label>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    class="text-input"
+                                    placeholder="Company Name"
+                                    autocomplete="organization"
+                                />
+                            </div>
+                            <div class="input-container">
+                                <label for="email_address">Email Address</label>
+                                <input
+                                    type="email"
+                                    name="email_address"
+                                    id="email_address"
+                                    class="text-input"
+                                    placeholder="Email Address*"
+                                    autocomplete="email"
+                                    required
+                                />
+                            </div>
                         </div>
                         <div class="message-container">
-                            <!-- <label for="message">Your Message</label> -->
+                            <label for="message">Your Message</label>
                             <textarea name="message" id="message" placeholder="Write your message here...*" required></textarea>
                         </div>
                         <button type="submit" class="submit-button btn">Send Message</button>
@@ -338,16 +359,12 @@
             </div>
             <div class="tear-up"></div>
         </section>
-
     </main>
 
     <footer>
-        
+     
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/05b670c92e.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/05b670c92e.js" crossorigin="anonymous"></script>
 </body>
 </html>

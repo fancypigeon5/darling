@@ -559,6 +559,31 @@ main {
     list-style-type: none;
 }
 
+.project-explanation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-lists {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project-explanation *, .project-lists p {
+    width: 100%;
+}
+
+.project-lists p {
+    text-align: start;
+}
+
 #projects .tear-down {
     position: absolute;
     bottom: -4vh;
@@ -913,11 +938,7 @@ footer {
     }
 
     .project-text {
-        overflow: auto;
-    }
-
-    .project-text::-webkit-scrollbar {
-        display: none;
+        height: 70%;
     }
 
     /* contact */
@@ -1024,35 +1045,12 @@ footer {
     }
     
     .project-info {
+        height: 100%;
         padding: 0 1em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-    }
-
-    .project-explanation {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .project-lists {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .project-explanation *, .project-lists p {
-        width: 100%;
-    }
-
-    .project-lists p {
-        text-align: start;
     }
 }
 
@@ -1171,6 +1169,14 @@ footer {
         transition: all .5s ease;
     }
 
+    .project-explanation {
+        flex-grow: 1;
+    }
+
+    .project-lists {
+        flex-grow: 1;
+    }
+
     .project-text * {
         color: var(--secondary-color);
     }
@@ -1194,7 +1200,6 @@ footer {
         opacity: 0;
         width: 35vw;
         margin-top: 4rem;
-        overflow: auto;
         transition: all .5s;
         transition-delay: 0s;
     }
@@ -1212,7 +1217,6 @@ footer {
         height: 100%;
         padding: 1em;
         border-radius: 2em;
-        overflow: auto;
         justify-content: center;
     }
 

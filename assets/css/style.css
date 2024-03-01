@@ -267,10 +267,10 @@ main {
 }
 
 .about-group p {
-    margin: .5em;
-    padding: 1em;
+    margin: .5em 0em;
+    padding: 1em .2em;
     width: 65vw;
-    text-align: start;
+    text-align: center;
 }
 
 .about-group {
@@ -310,7 +310,7 @@ main {
 }
 
 .step {
-    width: 75%;
+    width: 90%;
 }
 
 .step-card {
@@ -480,7 +480,8 @@ main {
 .project {
     position: relative;
     margin: 2em 0;
-    width: 80%;
+    text-align: left;
+    width: 90%;
     border-radius: 2em;
     box-shadow: 2px 2px 6px var(--overlay-color);
     display: flex;
@@ -540,7 +541,7 @@ main {
     text-align: center;
 }
 
-.project-text p {
+.project-text p, .project-text h4 {
     width: 100%;
     padding: .2em 0;
 }
@@ -548,6 +549,14 @@ main {
 .project-text ul, .project-text li {
     width: 100%;
     padding: 0 0 0 1em;
+}
+
+.project-text li {
+    margin: .2em 0;
+}
+
+.project-text ul {
+    list-style-type: none;
 }
 
 #projects .tear-down {
@@ -631,7 +640,7 @@ main {
     transform: translateX(-50%);
     text-align: center;
     margin: 1em 0;
-    height: 3rem;
+    height: 2rem;
     width: 90%;
     background-color: var(--secondary-color-extra-transparent);
     border-radius: 2em;
@@ -716,7 +725,7 @@ main {
 
 .text-input::placeholder, #message::placeholder {
     color: var(--secondary-color-extra-transparent);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #contact-info-container {
@@ -834,6 +843,7 @@ footer {
     .about-group {
         margin: 1em 4em;
         width: 80%;
+        aspect-ratio: 3/1;
         flex-direction: row;
         border-radius: 2em;
         box-shadow: 2px 2px 6px var(--overlay-color);
@@ -860,7 +870,7 @@ footer {
     
     .about-image {
         width: 45%;
-        aspect-ratio: 4 / 3;
+        height: 100%;
         object-fit: cover;
 
     }
@@ -915,7 +925,7 @@ footer {
 
     #form-info-toggle {
         width: 60%;
-        height: 3rem;
+        height: 2rem;
     }
 
     #contact-container {
@@ -1014,15 +1024,22 @@ footer {
     }
     
     .project-info {
+        padding: 0 1em;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        /* flex-direction: row; */
+        flex-direction: column;
         align-items: flex-start;
-
+        justify-content: space-around;
+        /* align-items: center; */
     }
 
+    /* .storedesk .project-info {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
     .project-explanation {
-        width: 45%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1030,13 +1047,23 @@ footer {
     }
 
     .project-lists {
-        width: 45%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
+    /* .storedesk .project-lists, .storedesk .project-explanation {
+        width: 100%;
+        padding: 0 .5em;
+    } */
+
+    /* .storedesk .project-lists {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+     */
     .project-explanation *, .project-lists p {
         width: 100%;
     }

@@ -6,7 +6,8 @@ frontend:
         - npm install
     # IMPORTANT - Please verify your build commands
     build:
-      commands: ["mkdir -p dist && cp index.html dist/ && cp -r assets dist"]
+      commands:
+        - mkdir -p dist && cp index.html dist/ && cp -r assets dist
   artifacts:
     baseDirectory: dist
     files:

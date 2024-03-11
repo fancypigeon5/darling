@@ -2,7 +2,7 @@
 
 [view the live site](https://fancypigeon5.github.io/darling/)
 
-Darling is a software development and data analysis company that was in need for a webpage to have a professional apearance for potential clients
+Darling is a software development and data analysis company that was in need for a webpage to have a professional apearance for potential clients. The site will function as a digital buisness card where potentail clients can get information about the company and most important can easily get in contact with the company.
 
 ![mockup of the site](assets/images/mockup.png)
 

@@ -2,7 +2,7 @@
 
 [view the live site](https://fancypigeon5.github.io/darling/)
 
-Darling is a software development and data analysis company that was in need for a webpage to have a professional apearance for potential clients. The site will function as a digital buisness card where potentail clients can get information about the company and most important can easily get in contact with the company.
+Darling is a software development and data analysis company that was in need for a webpage to have a professional apearance for potential clients. The site will function as a digital buisness card where potential clients can get information about the company and most important, can easily get in contact with the company.
 
 ![mockup of the site](assets/images/mockup.png)
 
@@ -11,37 +11,37 @@ Darling is a software development and data analysis company that was in need for
 ### Existing features
 
 - Navigation bar
-    - on the top of the page is a navigation bar that lets users easily navigate the page
-    - on mobile the Navigation turns into a hamburger menu
-    - the navigation bar if fixed so it stays in view when scrolling
+    - On the top of the page is a navigation bar that lets users easily navigate the page.
+    - On mobile the Navigation turns into a hamburger menu.
+    - The navigation bar is fixed so it stays in view when scrolling.
 
 - Hero section
     - The first part of the page consists of a hero section with a picture on the background and a short explenation of what Darling is.
     - On the hero section there is a contact button that makes it easy for users to get in contact
 
 - About section
-    - the about section is split up in 3 parts, 2 simple text parts to inform about who we are and what we do.
-    - the how we do it section on pc is an interactive section with cards that flip on hover to reveal a short text
-    - In the about section there is another contact button to make it easy to get in contact
+    - The about section is split up in 3 parts, 2 simple text parts to inform about who we are and what we do.
+    - The how we do it section on pc is an interactive section with cards that flip on hover to reveal a short text.
+    - In the about section there is another contact button to make it easy to get in contact.
 
 - Partners 
-    - the partners section exists of logos of previous clients or partners that move continuously from right to left over the screen
-    - the animation will not happen when the user has set the browser setting of prefer reduced motion to reduced.
+    - The partners section exists of logos of previous clients or partners that move continuously from right to left over the screen.
+    - The animation will not happen when the user has set the browser setting of prefer reduced motion to reduced.
 
 - Projects
-    - In the projects section there are a few previous projects displayed
-    - On desktop it shows the image and title of the project and on hover an overlay apears from bottom to top and the explanation is revealed
-    - most of the projects are links that take you to the site of the project itself
+    - In the projects section there are a few previous projects displayed.
+    - On desktop it shows the image and title of the project and on hover an overlay apears from bottom to top and the explanation is revealed.
+    - Most of the projects are links that take you to the site of the project itself.
 
 - Contact
     - This part exists of a background image with an overlay that can display either a form to get in contact or a map and additional contact info
 
 ### Features left to implement
 
-- Connecting the form to a mailing service
-- Adding more projects
-- Adding testemonies
-- creating a parrallax effect with the background 
+- Connecting the form to a mailing service.
+- Adding more projects.
+- Adding testemonies.
+- Creating a parrallax effect with the background.
 
 ## UX Design
 
@@ -82,6 +82,8 @@ The main colors of the page consist of the colors in the logo:
 
 - The blue color (#0081c9) is an objective, calm and analythical color. This helps give the feeling os professionalism and reliability.
 - The second color (#fffae6) is an off white. it gives the site a clean feeling without being to bright. It also helps smooth the contrast between with the blue color while still having enough contrast to be readable.
+
+To make it easier to change the colors later we decided to store all the colors used in global custom properties on the root element.
 
 #### typography
 
@@ -148,9 +150,9 @@ The images used on the site are either custom made images (ex. Logo, ...) or the
 
 I used the W3 validator for both HTML and CSS
 
--HTML: As shown in the screenshot below it passed all tests
+- HTML: As shown in the screenshot below it passed all tests
 ![html test](assets/images/html-test.png)
--CSS: At first glance it might look bad (2 errors and 4 warnings) but after further inspection those are a false alarm. the errors are given because of the use of the :has() pseudo selector which is as of now not yet supported in the validator tool. but when looking at caniuse we find that there is support for all the major browsers and a 92,11% support rate which is definitly enough for our site. the warnings are because of the use of vendor prefixes which always get flagged by the validator tool.
+- CSS: At first glance it might look bad (2 errors and 4 warnings) but after further inspection those are a false alarm. the errors are given because of the use of the :has() pseudo selector which is as of now not yet supported in the validator tool. but when looking at caniuse we find that there is support for all the major browsers and a 92,11% support rate which is definitly enough for our site. the warnings are because of the use of vendor prefixes which always get flagged by the validator tool.
 ![css test](assets/images/css-test.png)
 ![css has selector support](assets/images/css-has.png)
 
@@ -184,7 +186,7 @@ I tested the site on several different browsers (Chrome, Firefox, Opera and Safa
 
 ### Content
 
-- [W3 Schools](https://www.w3schools.com): reading their articles about elements and css selectors helped me understand problems when I got stuck.
+- [W3 Schools](https://www.w3schools.com): Reading their articles about elements and css selectors helped me understand problems when I got stuck.
 
 - [Stackoverflow](https://stackoverflow.com): A few times when i was experiencing a problem, this site helped me to fix the issues i was having.
 
@@ -196,8 +198,8 @@ I tested the site on several different browsers (Chrome, Firefox, Opera and Safa
 
 ### Media
 
-- Own creation: the logos both darling and storedesk were made custom using inkscape
+- Own creation: The logos both darling and storedesk were made custom using inkscape
 
-- [ChatGPT](https://chat.openai.com): all of the images used were generated using chstGPT
+- [ChatGPT](https://chat.openai.com): All of the images used were generated using chstGPT
 
-- [Tinypng](https://tinypng.com): this was used to compress the images to a more web friendly size. 
+- [Tinypng](https://tinypng.com): This was used to compress the images to a more web friendly size. 

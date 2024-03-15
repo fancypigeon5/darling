@@ -11,29 +11,36 @@ Darling is a software development and data analysis company that was in need for
 ### Existing features
 
 - Navigation bar
+    ![Navbar](assets/images/navbar.png)
     - On the top of the page is a navigation bar that lets users easily navigate the page.
     - On mobile the Navigation turns into a hamburger menu.
     - The navigation bar is fixed so it stays in view when scrolling.
 
 - Hero section
+    ![Hero](assets/images/hero-section.png)
     - The first part of the page consists of a hero section with a picture on the background and a short explenation of what Darling is.
     - On the hero section there is a contact button that makes it easy for users to get in contact
 
 - About section
+    ![About who](assets/images/About-who.png)
     - The about section is split up in 3 parts, 2 simple text parts to inform about who we are and what we do.
+    ![About how](assets/images/about-how.png)
     - The how we do it section on pc is an interactive section with cards that flip on hover to reveal a short text.
     - In the about section there is another contact button to make it easy to get in contact.
 
 - Partners 
+    ![Partners](assets/images/partners-section.png)
     - The partners section exists of logos of previous clients or partners that move continuously from right to left over the screen.
     - The animation will not happen when the user has set the browser setting of prefer reduced motion to reduced.
 
 - Projects
+    ![Projects](assets/images/project-section.png)
     - In the projects section there are a few previous projects displayed.
     - On desktop it shows the image and title of the project and on hover an overlay apears from bottom to top and the explanation is revealed.
     - Most of the projects are links that take you to the site of the project itself.
 
 - Contact
+    ![contact](assets/images/contact-section.png)
     - This part exists of a background image with an overlay that can display either a form to get in contact or a map and additional contact info
 
 ### Features left to implement

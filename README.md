@@ -196,10 +196,12 @@ I tested the site on several different browsers (Chrome, Firefox, Opera and Safa
 
 - [Font Awesome](https://fontawesome.com): The burger icon for the navigation on mobile and the symbols in the footer were taken from Font Awesome
 
+- [Google Fonts](https://fonts.google.com): The fonts used in the site are taken from Google fonts
+
 ### Media
 
 - Own creation: The logos both darling and storedesk were made custom using inkscape
 
 - [ChatGPT](https://chat.openai.com): All of the images used were generated using chstGPT
 
-- [Tinypng](https://tinypng.com): This was used to compress the images to a more web friendly size. 
+- [Tinypng](https://tinypng.com): This was used to compress the images to a more web friendly size.

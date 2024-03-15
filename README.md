@@ -188,7 +188,7 @@ To check the performance of the page we used PageSpeed which tests for both mobi
 
 - [ChatGPT](https://chat.openai.com): All of the text in on the page is either written by hand by me or the business owner or is created using chatGPT.
 
-- [Font Awesome](https://fontawesome.com): The burger icon for the navigation on mobile was teken from Font Awesome
+- [Font Awesome](https://fontawesome.com): The burger icon for the navigation on mobile and the symbols in the footer were taken from Font Awesome
 
 ### Media
 

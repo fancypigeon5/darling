@@ -803,6 +803,11 @@ main {
 }
 
 #contact-info * {
+    margin: 1em 0;
+}
+
+.indented {
+    padding-left: 1.5em;
     margin: .5em 0;
 }
 
@@ -817,7 +822,18 @@ footer {
     height: 4em;
     width: 100%;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+footer > * {
+    margin: 0 .5em;
+}
+
+
 
 /* Media querries */
 

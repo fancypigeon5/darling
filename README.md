@@ -98,51 +98,51 @@ The images used on the site are either custom made images (ex. Logo, ...) or the
 
 #### Navigation bar
 
-| Test | Expected result |
-|:---|:---|
-| How does the navigation look on snmaller screens | The navigation should be displayed as a hamburger icon that when clicked expands into a menu with the different navigation items. |
-| What happens on Click | When clicked the page shoud scroll to the corresponding section.|
-| Clicking on logo | The page should scroll to the top. |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| How does the navigation look on snmaller screens | The navigation should be displayed as a hamburger icon that when clicked expands into a menu with the different navigation items. | :heavy_check_mark: |
+| What happens on Click | When clicked the page shoud scroll to the corresponding section.| :heavy_check_mark: |
+| Clicking on logo | The page should scroll to the top. | :heavy_check_mark: |
 
 #### Hero section
 
-| Test | Expected result |
-|:---|:---|
-| Changing screen size | On small screens the text should be centered, on bigger screens it should be on the right of the screen. |
-| Contact button | When clicking the get in touch button the page should scroll to the contact section. |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| Changing screen size | On small screens the text should be centered, on bigger screens it should be on the right of the screen. | :heavy_check_mark: |
+| Contact button | When clicking the get in touch button the page should scroll to the contact section. | :heavy_check_mark: |
 
 #### About section    
 
-| Test | Expected result |
-|:---|:---|
-| On small screens | The first 2 cards should display vertically and the how we do it part should exist of 4 cards vertically aligned with the text under the image. |
-| On big screens | The first 2 cards should now display horizontally but still vertically aligned to each other. They should take up most of the with but not all and the first one should be left alligned and the second one right. the how we do it section should now display as a row of 4 images withe one word over each image. |
-| Hovering over the how we do it images | When hovering the image should grow and flip revieling the text. |
-| Clicking the contact us now button | The page should scroll to the contact section |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| On small screens | The first 2 cards should display vertically and the how we do it part should exist of 4 cards vertically aligned with the text under the image. | :heavy_check_mark: |
+| On big screens | The first 2 cards should now display horizontally but still vertically aligned to each other. They should take up most of the with but not all and the first one should be left alligned and the second one right. the how we do it section should now display as a row of 4 images withe one word over each image. | :heavy_check_mark: |
+| Hovering over the how we do it images | When hovering the image should grow and flip revieling the text. | :heavy_check_mark: |
+| Clicking the contact us now button | The page should scroll to the contact section | :heavy_check_mark: |
 
 #### Partners
 
-| Test | Expected result |
-|:---|:---|
-| Prefer reduced motion set to no preference | The logos of previous partners shoud be moving from right to left over the screen. |
-| Prefer reduced motion set to reduced | The logos shoud not move by them selves, but a horizontal scrollbar should appear. |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| Prefer reduced motion set to no preference | The logos of previous partners shoud be moving from right to left over the screen. | :heavy_check_mark: |
+| Prefer reduced motion set to reduced | The logos shoud not move by them selves, but a horizontal scrollbar should appear. | :heavy_check_mark: |
 
 #### Projects
 
-| Test | Expected result |
-|:---|:---|
-| On small screens | The different projects should appear as cards with a photo, title and explenation. |
-| On bigger screens | The projects should appear as a row of images with an overlay over the bottom where the title is displayed |
-| when hovering over a project | The project should grow in size and the overlay should move from the bottom to cover the entire image revealing the text. |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| On small screens | The different projects should appear as cards with a photo, title and explenation. | :heavy_check_mark: |
+| On bigger screens | The projects should appear as a row of images with an overlay over the bottom where the title is displayed | :heavy_check_mark: |
+| when hovering over a project | The project should grow in size and the overlay should move from the bottom to cover the entire image revealing the text. | :heavy_check_mark: |
 
 #### Contact
 
-| Test | Expected result |
-|:---|:---|
-| On small screens | The form should display vertically aligned with all fields taking the entire width |
-| On bigger screens | The form should display with the top 4 inputs as a 2x2 grid. |
-| Toggeling the form/contact info | when clicking on the part that is not blue, it should turn blue and the corresponding content should appear on the screen |
-| Submitting the form | The site wil be redirected to the CI form dump page. |
+| Test | Expected result | Pass |
+|:---|:---|:---:|
+| On small screens | The form should display vertically aligned with all fields taking the entire width | :heavy_check_mark: |
+| On bigger screens | The form should display with the top 4 inputs as a 2x2 grid. | :heavy_check_mark: |
+| Toggeling the form/contact info | when clicking on the part that is not blue, it should turn blue and the corresponding content should appear on the screen | :heavy_check_mark: |
+| Submitting the form | The site wil be redirected to the CI form dump page. | :heavy_check_mark: |
 
 ### Validators
 

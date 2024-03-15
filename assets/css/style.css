@@ -282,7 +282,7 @@ main {
 .about-group p {
     margin: .5em 0em;
     padding: 1em .5em;
-    line-height: 3px;
+    line-height: 1.5em;
     text-align: justify;
 }
 

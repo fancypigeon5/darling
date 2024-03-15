@@ -192,6 +192,8 @@ I tested the site on several different browsers (Chrome, Firefox, Opera and Safa
 
 - [MDN wbe docs](https://developer.mozilla.org/en-US/): Just like w3 this site helped to understand elements by providing documentation.
 
+- [Youtube](https://Youtube.com): For some of the features I have followed some youtube video's mainly for [the logo animation](https://www.youtube.com/watch?v=nAjR0Oj0J8E&t=596s) and [the flip cards](https://www.youtube.com/watch?v=OV8MVmtgmoY&t=226s).
+
 - [ChatGPT](https://chat.openai.com): All of the text in on the page is either written by hand by me or the business owner or is created using chatGPT.
 
 - [Font Awesome](https://fontawesome.com): The burger icon for the navigation on mobile and the symbols in the footer were taken from Font Awesome

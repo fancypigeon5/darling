@@ -26,6 +26,13 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1920px;
+    background-color: var(--secondary-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* scrollbar styling */
 ::-webkit-scrollbar {
     width: .5em;
@@ -94,6 +101,7 @@ html {
 
 header {
     position: fixed;
+    max-width: 1920px;
     top: 0;
     width: 100%;
     height: 5em;
@@ -183,6 +191,7 @@ main {
     position: relative;
     width: 100%;
     height: 85vh;
+    max-height: 918px;
     z-index: 1;
     background-image: url('../images/hero-image.webp');
     background-color: var(--text-color-dark);
@@ -273,7 +282,8 @@ main {
 .about-group p {
     margin: .5em 0em;
     padding: 1em .5em;
-    text-align: center;
+    line-height: 3px;
+    text-align: justify;
 }
 
 .about-group {
@@ -599,7 +609,7 @@ main {
 #contact {
     position: relative;
     height: fit-content;
-    min-height: 85vh;
+    max-height: 918px;
     background-image: url('../images/contact-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
@@ -625,7 +635,6 @@ main {
     margin: 10em 0em;
     width: 90%;
     height: fit-content;
-    min-height: 60vh;
     border-radius: 2em;
     background-color: transparent;
     border: solid 1px var(--secondary-color-extra-transparent);
@@ -1072,11 +1081,12 @@ footer {
 
     #step-container {
         height: 32vw;
+        max-height: 614px;
     }
 
     .step {
         flex-shrink: 1;
-        width: 20vw;
+        width: 20%;
         aspect-ratio: 1 / 1;
         transition: all 1s ease;
     }
@@ -1119,7 +1129,7 @@ footer {
         transition: all .5s ease;
         transition-delay: 0s;
         padding: 1em;
-        width: 30vw;
+        width: 100%;
     }
 
     .step:hover .step-card {
@@ -1128,11 +1138,11 @@ footer {
 
     .step:hover .back p {
         opacity: 1;
-        transition-delay: 0.5s;
+        transition-delay: 0.7s;
     }
 
     .step:hover {
-        width: 30vw;
+        width: 30%;
     }
     
     /* projects */
@@ -1140,6 +1150,7 @@ footer {
     #projects-container {
         width: 100%;
         height: 40vw;
+        max-height: 768px;
         flex-wrap: nowrap;
         align-items: center;
     }
@@ -1201,14 +1212,14 @@ footer {
 
     .project-info {
         opacity: 0;
-        width: 35vw;
+        width: 100%;
         margin-top: 4rem;
         transition: all .5s;
         transition-delay: 0s;
     }
 
     .project:hover {
-        width: 40vw;
+        width: 40%;
     }
 
     .project:hover .project-info {

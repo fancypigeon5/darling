@@ -38,7 +38,10 @@ Darling is a software development and data analysis company that was in need for
 
 ### Features left to implement
 
-- 
+- Connecting the form to a mailing service
+- Adding more projects
+- Adding testemonies
+- creating a parrallax effect with the background 
 
 ## UX Design
 
@@ -175,12 +178,22 @@ To check the performance of the page we used PageSpeed which tests for both mobi
 
 ## Credits
 
-### External links
+### Content
 
-- W3 Schools: reading their articles about elements and css selectors helped me understand problems when I got stuck.
+- [W3 Schools](https://www.w3schools.com): reading their articles about elements and css selectors helped me understand problems when I got stuck.
 
-- Stackoverflow: A few times when i was experiencing a problem, this site helped me to fix the issues i was having.
+- [Stackoverflow](https://stackoverflow.com): A few times when i was experiencing a problem, this site helped me to fix the issues i was having.
 
-- MDN wbe docs: Just like w3 this site helped to understand elements by providing documentation.
+- [MDN wbe docs](https://developer.mozilla.org/en-US/): Just like w3 this site helped to understand elements by providing documentation.
 
-- Tinyjpeg: this was used to compress the images to a more web friendly size. 
+- [ChatGPT](https://chat.openai.com): All of the text in on the page is either written by hand by me or the business owner or is created using chatGPT.
+
+- [Font Awesome](https://fontawesome.com): The burger icon for the navigation on mobile was teken from Font Awesome
+
+### Media
+
+- Own creation: the logos both darling and storedesk were made custom using inkscape
+
+- [ChatGPT](https://chat.openai.com): all of the images used were generated using chstGPT
+
+- [Tinypng](https://tinypng.com): this was used to compress the images to a more web friendly size. 

@@ -160,6 +160,10 @@ To check the performance of the page we used PageSpeed which tests for both mobi
 ![mobile performance test](assets/images/performance-mobile.png)
 ![desktop performance test](assets/images/performance-desktop.png)
 
+### Compatibility
+
+I tested the site on several different browsers (Chrome, Firefox, Opera and Safari) and did not notice any problems on Different browsers.
+
 ## Deployment
 
 ### How the page is deployed
